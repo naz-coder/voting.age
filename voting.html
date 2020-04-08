@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote|Age</title>
+</head>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+<body>
+    <h1>Voters Eligibility</h1>
+    <hr>
+    <h3 id="name"></h3>
+    <h3 id="age"></h3>
+    <h3 id="yearOfBirth"></h3>
+
+
+    <script>
+        let name = prompt('Enter full name');
+        let yearOfBirth= parseInt(prompt('Enter year of birth'));
+        document.getElementById('name').innerHTML='Name: ' +name;
+        document.getElementById('age').innerHTML="Age: " +(2020-yearOfBirth);
+        if(2020-yearOfBirth <=18){
+        document.write('Sorry! ' + name+ ' you are not eligible to vote');
+        }else{
+        document.write('Hello! ' + name+ ' you are eligible to vote');
+        }
+    </script>
+    </body>
+</html>
